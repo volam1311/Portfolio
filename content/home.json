@@ -1,0 +1,47 @@
+{
+  "hero": {
+    "label": "DATA & SOFTWARE INTEREST",
+    "name": "Phuc Lam Vo.",
+    "bio": "I am a developer and analyst who bridges the gap between robust software engineering and data-driven insights. I love taking complex datasets through the entire pipeline from advanced statistical modeling to building the responsive, full-stack applications that bring those insights to life.",
+    "portrait": "portrait.jpg"
+  },
+  "skillsSection": {
+    "title": "Skills & Expertise"
+  },
+  "skills": [
+    {
+      "title": "Languages",
+      "items": ["Python", "R", "JavaScript", "Java", "C#"]
+    },
+    {
+      "title": "Databases",
+      "items": ["MySQL", "Postgres", "MongoDB"]
+    },
+    {
+      "title": "Web Development Frameworks",
+      "items": ["React", "FastAPI", "Express.js"]
+    },
+    {
+      "title": "Data Science Libraries",
+      "items": [
+        "PyTorch",
+        "scikit-learn",
+        "NumPy",
+        "Pandas",
+        "HuggingFace"
+      ]
+    },
+    {
+      "title": "Development Tools",
+      "items": ["Marvel App", "GitHub", "Git", "VS Code"]
+    },
+    {
+      "title": "Data Visualization Tools",
+      "items": ["Tableau", "Power BI"]
+    },
+    {
+      "title": "Mathematics",
+      "items": ["Calculus", "Linear Algebra", "Probability", "Statistics"]
+    }
+  ]
+}
