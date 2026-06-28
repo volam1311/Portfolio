@@ -68,6 +68,26 @@ export function IconInstagram({ className }) {
   )
 }
 
+export function IconGraduation({ className }) {
+  return (
+    <svg className={className} width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 3L2 8L12 13L22 8L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M6 10.5V16L12 19L18 16V10.5" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M22 8V14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function IconBriefcase({ className }) {
+  return (
+    <svg className={className} width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <rect x="3" y="7" width="18" height="13" rx="1" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M8 7V5C8 3.895 8.895 3 10 3H14C15.105 3 16 3.895 16 5V7" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M3 12H21" stroke="currentColor" strokeWidth="1.5" />
+    </svg>
+  )
+}
+
 const socialIcons = {
   github: IconGithub,
   linkedin: IconLinkedin,

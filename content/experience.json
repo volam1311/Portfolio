@@ -1,0 +1,39 @@
+{
+  "education": {
+    "label": "EDUCATION",
+    "items": [
+      {
+        "id": "qut-bachelor",
+        "institution": "Queensland University of Technology",
+        "period": "2025–2028",
+        "qualification": "Bachelor of IT",
+        "detail": "Major in Computer Science, Data Science",
+        "metrics": "GPA: 6.875 · WAM: 90.25"
+      },
+      {
+        "id": "nguyen-hue",
+        "institution": "Nguyen Hue High School for Gifted Students",
+        "period": "2021–2024",
+        "qualification": "Major in Physics",
+        "detail": null
+      }
+    ]
+  },
+  "work": {
+    "label": "EXPERIENCE",
+    "items": [
+      {
+        "id": "myres",
+        "role": "MYRES Participant",
+        "organization": "Queensland University of Technology",
+        "period": "June 2026 – August 2026"
+      },
+      {
+        "id": "research-student",
+        "role": "Research Student",
+        "organization": "Queensland University of Technology",
+        "period": "October 2025 – February 2026"
+      }
+    ]
+  }
+}

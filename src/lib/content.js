@@ -1,6 +1,7 @@
 import site from '../../content/site.json'
 import home from '../../content/home.json'
 import awards from '../../content/awards.json'
+import experience from '../../content/experience.json'
 
 const projectModules = import.meta.glob('../../content/projects/*.json', {
   eager: true,
@@ -16,6 +17,10 @@ export function getHome() {
 
 export function getAwards() {
   return awards
+}
+
+export function getExperience() {
+  return experience
 }
 
 export function getProjects() {
