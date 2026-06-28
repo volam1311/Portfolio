@@ -1,0 +1,8 @@
+{
+    "id": "mortality_forecasting",
+    "title": "Forecasting Mortality in ICU",
+    "year": 2026,
+    "category": "Data Science",
+    "description": "The project aims to forecast mortality in ICU using a machine learning model. The model is trained on a dataset of ICU patients and is used to predict the mortality of new patients.",
+    "tags": ["R"]
+  }

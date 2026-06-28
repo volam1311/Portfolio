@@ -1,0 +1,39 @@
+{
+  "name": "Phuc Lam Vo",
+  "nav": [
+    { "label": "Home", "path": "/" },
+    { "label": "Projects", "path": "/projects" },
+    { "label": "Experience", "path": "/experience" },
+    { "label": "Awards", "path": "/awards" },
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "contact": {
+    "email": "vophuclam1311@gmail.com",
+    "location": "Brisbane, QLD, Australia",
+    "responseTime": "Within 2–3 business days"
+  },
+  "social": [
+    { "label": "GitHub", "url": "https://github.com/volam1311", "icon": "github" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/phuc-lam-vo-281034336/", "icon": "linkedin" },
+    { "label": "Instagram", "url": "https://www.instagram.com/volam_1311/", "icon": "instagram" },
+    { "label": "Email", "url": "mailto:vophuclam1311@gmail.com", "icon": "email" }
+  ],
+  "footer": {
+    "copyright": "© 2026 Phuc Lam Vo",
+    "tagline": "Designed & built with care"
+  },
+  "pages": {
+    "projects": {
+      "title": "Projects",
+      "description": "All my projects across data analysis, software development, and machine learning."
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "description": "I am always looking for new opportunities to collaborate on projects. If you have something interesting in mind — a data problem to solve, a product to build, or a collaboration to explore — I'd love to hear about it."
+    },
+    "experience": {
+      "title": "Experience",
+      "description": "My academic background and work experience."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "id": "woolworths_sales",
+    "title": "Woolworths Chips Sales Analysis",
+    "year": 2026,
+    "category": "Data Analyst",
+    "description": "Analyzing Woolworths chips sales data to identify top-selling chips, customer preferences, and sales trends. Moreover, the analysis helps the business make decisions on which chips to stock and which chips to discontinue.",
+    "tags": ["Jupyter Notebook", "Python", "Matplotlib"],
+    "url": "https://github.com/volam1311/Woolworths-Chips-Sales-Analysis"
+  }
+  

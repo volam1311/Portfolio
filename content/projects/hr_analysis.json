@@ -1,0 +1,9 @@
+{
+    "id": "hr_analysis",
+    "title": "HR Analysis Dashboard",
+    "year": 2026,
+    "category": "Data Analyst",
+    "description": "Interactive dashboard analyzing HR data to provide insights on employee performance, turnover, and recruitment trends. Therefore, the dashboard is used to help the business make data-driven decisions.",
+    "tags": ["PowerBI", "PowerQuery"],
+    "url": "https://github.com/volam1311/HR-Analysis-Dashboard"
+  }

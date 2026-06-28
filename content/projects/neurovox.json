@@ -1,0 +1,10 @@
+{
+    "id": "neurovox",
+    "title": "NeuroVox",
+    "year": 2026,
+    "category": "Data Science",
+    "description": "Neurovox is an assistive tech project that allows stroke patients to type via webcam eye-tracking and uses an OpenAI-driven language model to predict and expand their intended messages. This innovative solution earned a prize at the QUT AIML Hackathon 2026.",
+    "tags": ["Python", "MediaPipe", "Numpy","Scikit-learn","OpenCV","OpenAI API"],
+    "url": "https://github.com/volam1311/Neurovox"
+  }
+  

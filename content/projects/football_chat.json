@@ -1,0 +1,10 @@
+{
+    "id": "my-project",
+    "title": "Football Fantasy",
+    "year": 2025,
+    "category": "Software",
+    "description": "A football chatbot that allows users to ask questions about football and get answers from a database of football data using OpenAI API.",
+    "tags": ["React", "FastAPI", "OpenAI API"],
+    "url": "https://github.com/volam1311/Football-Fantasy"
+  }
+  
