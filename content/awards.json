@@ -1,0 +1,28 @@
+{
+  "label": "RECOGNITION",
+  "title": "Awards",
+  "description": "",
+  "awards": [
+    {
+      "id": "aiml-hackathon-interdisciplinary",
+      "title": "Best Interdisciplinary Award",
+      "year": 2026,
+      "body": "AIML Hackathon",
+      "image": "best_interdisciplinary.jpeg"
+    },
+    {
+      "id": "qut-deans-commendation-s2",
+      "title": "QUT Executive Deans' Commendation for Academic Excellence — Semester 2, 2025",
+      "year": 2025,
+      "body": "Queensland University of Technology",
+      "image": "qut_dean_2025_2.png"
+    },
+    {
+      "id": "qut-deans-commendation-s1",
+      "title": "QUT Executive Deans' Commendation for Academic Excellence — Semester 1, 2025",
+      "year": 2025,
+      "body": "Queensland University of Technology",
+      "image": "qut_dean_2025_1.png"
+    }
+  ]
+}
