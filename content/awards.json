@@ -4,6 +4,13 @@
   "description": "",
   "awards": [
     {
+      "id":"qut-deans-commendation-2026s1",
+      "title": "QUT Executive Deans' Commendation for Academic Excellence — Semester 1, 2026",
+      "year": 2026,
+      "body": "Queensland University of Technology",
+      "image": "qut_dean_2026_1.png"
+    },
+    {
       "id": "aiml-hackathon-interdisciplinary",
       "title": "Best Interdisciplinary Award",
       "year": 2026,

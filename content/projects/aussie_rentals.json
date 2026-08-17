@@ -1,0 +1,9 @@
+{
+    "id": "aussie_rentals",
+    "title": "Aussie Rentals",
+    "year": 2026,
+    "category": "Software",
+    "description": "Aussie Rentals is a software project that allows users to look for a rent in Australia.",
+    "tags": ["React", "ExpressJS", "MySQL"],
+    "url": "https://github.com/volam1311/Australia-Rental"
+  }
