@@ -1,12 +1,12 @@
 const sizes = {
-  default: 'px-3 py-1.5 text-[11px]',
-  lg: 'px-4 py-2.5 text-sm',
+  default: 'px-2.5 py-1 text-[11px]',
+  lg: 'px-3.5 py-1.5 text-sm',
 }
 
 export default function Tag({ children, size = 'default', className = '' }) {
   return (
     <span
-      className={`inline-block border border-border bg-white font-mono text-gray-600 ${sizes[size]} ${className}`.trim()}
+      className={`inline-block rounded-md border border-border bg-bg font-mono text-muted ${sizes[size]} ${className}`.trim()}
     >
       {children}
     </span>

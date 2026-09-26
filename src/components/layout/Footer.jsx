@@ -11,15 +11,15 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-border py-8">
-      <Container className="grid grid-cols-1 gap-3 text-center text-[11px] tracking-wider text-gray-400 sm:grid-cols-3 sm:items-center sm:text-left">
+      <Container className="grid grid-cols-1 gap-3 text-center text-xs text-subtle sm:grid-cols-3 sm:items-center sm:text-left">
         <span>{footer.copyright}</span>
         <span className="sm:text-center">{footer.tagline}</span>
         <a
           href="#top"
-          className="transition-colors hover:text-black sm:text-right"
+          className="transition-colors hover:text-fg sm:text-right"
           onClick={scrollToTop}
         >
-          BACK TO TOP ↑
+          Back to top ↑
         </a>
       </Container>
     </footer>

@@ -4,13 +4,13 @@ import { getPortraitUrl } from '../../lib/content'
 
 export default function HeroSection({ hero }) {
   return (
-    <section className="grid grid-cols-1 items-center gap-10 pb-12 lg:grid-cols-2 lg:gap-16 lg:pb-16">
-      <div className="order-2 lg:order-1">
+    <section className="grid grid-cols-1 items-center gap-10 pb-14 lg:grid-cols-2 lg:gap-16 lg:pb-20">
+      <div className="animate-fade-up">
         <SectionLabel>{hero.label}</SectionLabel>
-        <h1 className="mb-6 font-serif text-5xl font-medium tracking-tight text-black sm:text-6xl lg:text-7xl">
+        <h1 className="mb-5 text-5xl font-semibold tracking-tight text-fg sm:text-6xl lg:text-7xl">
           {hero.name}
         </h1>
-        <p className="mb-8 max-w-md text-base leading-relaxed">
+        <p className="mb-8 max-w-md text-base leading-relaxed text-muted">
           {hero.bio}
         </p>
         <div className="flex flex-wrap gap-3">
@@ -19,16 +19,16 @@ export default function HeroSection({ hero }) {
         </div>
       </div>
 
-      <div className="order-1 flex justify-center lg:order-2">
+      <div className="flex justify-center animate-fade-in delay-100">
         <div className="relative w-full max-w-[380px]">
           <div
-            className="pointer-events-none absolute -top-2 -right-2 z-10 h-16 w-16 border-t-2 border-r-2 border-gold sm:h-20 sm:w-20"
+            className="pointer-events-none absolute -inset-px rounded-2xl bg-linear-to-br from-accent/30 via-border to-transparent"
             aria-hidden="true"
           />
           <img
             src={getPortraitUrl(hero.portrait)}
             alt=""
-            className="aspect-3/4 w-full bg-border object-cover"
+            className="relative aspect-3/4 w-full rounded-2xl border border-border bg-surface object-cover shadow-[0_0_0_1px_rgba(0,0,0,0.03)]"
           />
         </div>
       </div>

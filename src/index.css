@@ -1,23 +1,79 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-gold: #c5a059;
-  --color-gray-600: #666666;
-  --color-gray-400: #aaaaaa;
-  --color-gray-300: #cccccc;
-  --color-border: #eeeeee;
-  --color-bg-form: #f5f3ef;
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: ui-monospace, 'Cascadia Code', monospace;
+  --color-accent: #0070f3;
+  --color-fg: #171717;
+  --color-muted: #666666;
+  --color-subtle: #888888;
+  --color-border: #eaeaea;
+  --color-surface: #fafafa;
+  --color-bg: #ffffff;
+  --font-sans: 'Geist', 'Geist Fallback', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', ui-monospace, monospace;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply m-0 font-sans text-base leading-relaxed text-gray-600 antialiased;
+    @apply m-0 bg-bg font-sans text-base leading-relaxed text-muted antialiased;
+    background-image:
+      radial-gradient(ellipse 70% 45% at 50% -15%, rgb(0 112 243 / 0.07), transparent),
+      linear-gradient(to right, rgb(0 0 0 / 0.015) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(0 0 0 / 0.015) 1px, transparent 1px);
+    background-size: auto, 48px 48px, 48px 48px;
+    background-attachment: fixed;
   }
 
   #root {
     @apply min-h-svh;
+  }
+
+  ::selection {
+    background: rgb(0 112 243 / 0.15);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease both;
+  }
+
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -27,10 +27,10 @@ export default function Projects() {
   }, [projects, filter, search])
 
   const filterClass = (active) =>
-    `border px-4 py-2 font-mono text-xs transition-colors ${
+    `rounded-md border px-3.5 py-1.5 font-mono text-xs transition-colors ${
       active
-        ? 'border-black bg-black text-white'
-        : 'border-border bg-white text-gray-600 hover:border-gray-300'
+        ? 'border-fg bg-fg text-white'
+        : 'border-border bg-bg text-muted hover:border-fg/20 hover:text-fg'
     }`
 
   return (
@@ -62,10 +62,10 @@ export default function Projects() {
           ))}
         </div>
         <div className="relative w-full lg:w-60">
-          <IconSearch className="pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-gray-400" />
+          <IconSearch className="pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-subtle" />
           <input
             type="search"
-            className="w-full border border-border bg-[#F8F8F8] py-2.5 pr-3.5 pl-10 text-[13px] text-black outline-none focus:border-gray-300"
+            className="w-full rounded-lg border border-border bg-surface py-2.5 pr-3.5 pl-10 text-sm text-fg outline-none transition-colors placeholder:text-subtle focus:border-fg/30"
             placeholder="Search projects..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -74,29 +74,29 @@ export default function Projects() {
         </div>
       </div>
 
-      <p className="mb-8 font-mono text-xs text-gray-400">
+      <p className="mb-8 font-mono text-xs text-subtle">
         {filtered.length} project{filtered.length !== 1 ? 's' : ''} found
       </p>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {filtered.map((project) => (
           <article
             key={project.id}
-            className="border border-border p-5 transition-shadow hover:shadow-lg sm:p-6"
+            className="group rounded-xl border border-border bg-bg/80 p-5 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-fg/15 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:p-6"
           >
-            <span className="mb-3 inline-block border border-border px-3 py-1.5 font-mono text-[11px] text-black">
+            <span className="mb-3 inline-block rounded-md border border-border px-2.5 py-1 font-mono text-[11px] text-fg">
               {project.category}
             </span>
             <div className="mb-3 flex items-start justify-between gap-3">
               <div>
-                <span className="mb-1 block text-xs text-gray-400">{project.year}</span>
-                <h2 className="font-serif text-lg font-medium text-black sm:text-xl">
+                <span className="mb-1 block text-xs text-subtle">{project.year}</span>
+                <h2 className="text-lg font-semibold tracking-tight text-fg sm:text-xl">
                   {project.title}
                 </h2>
               </div>
               <ExternalLink href={project.url} />
             </div>
-            <p className="mb-4 text-sm leading-relaxed text-gray-600">
+            <p className="mb-4 text-sm leading-relaxed text-muted">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-1.5">

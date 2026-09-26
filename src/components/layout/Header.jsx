@@ -6,25 +6,25 @@ export default function Header() {
   const { name, nav } = getSite()
 
   return (
-    <header className="border-b border-border">
-      <Container className="flex flex-col items-center justify-between gap-4 py-5 sm:h-[72px] sm:flex-row sm:py-0">
+    <header className="sticky top-0 z-50 border-b border-border/80 bg-bg/75 backdrop-blur-xl">
+      <Container className="flex flex-col items-center justify-between gap-4 py-4 sm:h-16 sm:flex-row sm:py-0">
         <NavLink
           to="/"
-          className="text-[13px] font-semibold tracking-[0.12em] text-black"
+          className="text-sm font-semibold tracking-tight text-fg transition-opacity hover:opacity-70"
         >
-          {name.toUpperCase()}
+          {name}
         </NavLink>
-        <nav className="flex flex-wrap justify-center gap-5 sm:gap-8" aria-label="Main navigation">
+        <nav className="flex flex-wrap justify-center gap-1 sm:gap-0.5" aria-label="Main navigation">
           {nav.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               end={item.path === '/'}
               className={({ isActive }) =>
-                `border-b pb-1 text-[13px] transition-colors ${
+                `rounded-md px-3 py-1.5 text-sm transition-colors ${
                   isActive
-                    ? 'border-gold text-black'
-                    : 'border-transparent text-gray-600 hover:text-black'
+                    ? 'bg-surface text-fg'
+                    : 'text-muted hover:bg-surface hover:text-fg'
                 }`
               }
             >

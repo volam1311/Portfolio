@@ -1,6 +1,6 @@
 export default function SectionLabel({ children }) {
   return (
-    <p className="mb-4 text-[11px] font-medium tracking-[0.15em] text-gold uppercase">
+    <p className="mb-3 font-mono text-xs font-medium tracking-wide text-accent">
       {children}
     </p>
   )
