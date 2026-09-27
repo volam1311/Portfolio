@@ -1,0 +1,10 @@
+{
+    "id": "swapgap",
+    "title": "SwapGap",
+    "year": 2026,
+    "category": "Software",
+    "description": "AI-powered triage for university students: diagnose the misconception, map it on a Learning GPS, route a scripted peer check, then verify — or escalate to Student Success. We won the Potential Solution Award for QLD State Round.",
+    "tags": ["Python", "FastAPI", "PostgreSQL", "OpenAI API", "OnRender", "Docker"],
+    "url": "https://github.com/volam1311/SwapGap",
+    "work": "https://swapgap.onrender.com/"
+}

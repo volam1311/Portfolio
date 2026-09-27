@@ -5,5 +5,6 @@
     "category": "Software",
     "description": "EduTrack is a software platform that bridges the communication gap between parents and teachers by providing a platform for parents to track their child's progress and for teachers to communicate with parents.",
     "tags": ["React", "FastAPI", "PostgreSQL","CurricuLLM API"],
-    "url": "https://github.com/VAHPEM/AI_Parent-Teacher_Bridge/tree/main"
+    "url": "https://github.com/VAHPEM/AI_Parent-Teacher_Bridge/tree/main",
+    "work": "https://canva.link/exskjubokx5jnwj"
   }

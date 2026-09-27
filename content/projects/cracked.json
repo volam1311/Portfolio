@@ -1,0 +1,11 @@
+{
+    "id": "cracked",
+    "title": "CrackEd",
+    "year": 2026,
+    "category": "Software",
+    "description": "An educational video platform that makes useful content as clickable and engaging as brain-rot content — without turning the actual material into brain rot.",
+    "tags": ["React", "FastAPI", "Docker", "FFmpeg"],
+    "url": "https://github.com/volam1311/CrackEd",
+    "work": "https://canva.link/mq8asngbllcx45a"
+  }
+  

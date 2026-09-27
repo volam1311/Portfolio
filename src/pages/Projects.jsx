@@ -2,9 +2,60 @@ import { useMemo, useState } from 'react'
 import { getSite, getProjects, getProjectCategories } from '../lib/content'
 import Container from '../components/ui/Container'
 import PageHero from '../components/ui/PageHero'
-import ExternalLink from '../components/ui/ExternalLink'
 import Tag from '../components/ui/Tag'
-import { IconSearch } from '../components/ui/Icons'
+import { IconExternal, IconGithub, IconSearch } from '../components/ui/Icons'
+
+function isCodeLink(url) {
+  return typeof url === 'string' && /github\.com|gitlab\.com|bitbucket\.org/i.test(url)
+}
+
+function projectActions(project) {
+  const code = project.code || (isCodeLink(project.url) ? project.url : '')
+  const work = project.work || (project.url && !isCodeLink(project.url) ? project.url : '')
+  return {
+    code: code || null,
+    work: work || null,
+  }
+}
+
+function ProjectLinks({ project }) {
+  const { code, work } = projectActions(project)
+  if (!code && !work) return null
+
+  const itemClass =
+    'inline-flex items-center justify-center gap-1.5 px-3 py-3 text-xs font-medium text-fg transition-colors hover:bg-surface focus-visible:bg-surface focus-visible:outline-none'
+
+  return (
+    <div
+      className={`-mx-5 -mb-5 mt-5 grid border-t border-border sm:-mx-6 sm:-mb-6 ${
+        code && work ? 'grid-cols-2' : 'grid-cols-1'
+      }`}
+    >
+      {work && (
+        <a
+          href={work}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={itemClass}
+        >
+          View Work
+          <IconExternal />
+        </a>
+      )}
+      {code && (
+        <a
+          href={code}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${itemClass} ${work ? 'border-l border-border' : ''}`}
+        >
+          <IconGithub className="size-3.5" />
+          View Code
+        </a>
+      )}
+    </div>
+  )
+}
 
 export default function Projects() {
   const { pages } = getSite()
@@ -82,19 +133,16 @@ export default function Projects() {
         {filtered.map((project) => (
           <article
             key={project.id}
-            className="group rounded-xl border border-border bg-bg/80 p-5 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-fg/15 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:p-6"
+            className="group flex flex-col overflow-hidden rounded-xl border border-border bg-bg/80 p-5 backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-fg/15 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] sm:p-6"
           >
             <span className="mb-3 inline-block rounded-md border border-border px-2.5 py-1 font-mono text-[11px] text-fg">
               {project.category}
             </span>
-            <div className="mb-3 flex items-start justify-between gap-3">
-              <div>
-                <span className="mb-1 block text-xs text-subtle">{project.year}</span>
-                <h2 className="text-lg font-semibold tracking-tight text-fg sm:text-xl">
-                  {project.title}
-                </h2>
-              </div>
-              <ExternalLink href={project.url} />
+            <div className="mb-3">
+              <span className="mb-1 block text-xs text-subtle">{project.year}</span>
+              <h2 className="text-lg font-semibold tracking-tight text-fg sm:text-xl">
+                {project.title}
+              </h2>
             </div>
             <p className="mb-4 text-sm leading-relaxed text-muted">
               {project.description}
@@ -103,6 +151,9 @@ export default function Projects() {
               {project.tags.map((tag) => (
                 <Tag key={tag}>{tag}</Tag>
               ))}
+            </div>
+            <div className="mt-auto">
+              <ProjectLinks project={project} />
             </div>
           </article>
         ))}
